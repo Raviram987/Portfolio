@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        .project-image {
+            width: 200%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 15px;
+        }
+        .project-content h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        .project-content p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Projects</h1>
+    </header>
+    <div class="container">
+        <div class="projects">
+            <div class="project-item">
+                <img src="Projects.html" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h2>Project One</h2>
+                    <p>A detailed description of the project, first protfolio project.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h2>Project Two</h2>
+                    <p>A description showcasing how this project solved a specific problem creatively.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h2>Project Three</h2>
+                    <p>Details about the project's development process and its impact on the target audience.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project4.jpg" alt="Project 4" class="project-image">
+                <div class="project-content">
+                    <h2>Project Four</h2>
+                    <p>Highlights of the technical challenges overcome during this project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> 2024 Ravi &#169; | All rights reserved.</p>
+    </footer>
+</body>
+</html>
