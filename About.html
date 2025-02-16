@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ravi Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        header {
+            background-color: rgb(20, 20, 50);
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(156, 156, 236);
+        }
+
+        .about-section {
+            max-width: 900px;
+            margin: 100px auto 60px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: rgb(156, 156, 236);
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+            padding: 0 15px;
+        }
+
+        .skills {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .skill {
+            background: rgb(20, 20, 50);
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 280px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill h3 {
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .skill p {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgb(20, 20, 50);
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: rgb(156, 156, 236);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: rgb(20, 20, 50);
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                padding: 10px;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .about-section h1 {
+                font-size: 2rem;
+            }
+
+            .about-section p {
+                font-size: 0.95rem;
+            }
+
+            .skills {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ravi's Portfolio</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Certification</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-section">
+        <h1>About Me</h1>
+        <p>
+            Hi, I’m Ravi, a passionate and dedicated web developer with expertise in creating engaging digital experiences. 
+            I specialize in front-end development, bringing designs to life with clean, efficient code. With a strong background 
+            in Python development, UI/UX design, and data analysis, I strive to craft solutions that are not only visually 
+            appealing but also highly functional.
+        </p>
+        <p>
+            Beyond coding, I’m an avid learner who enjoys exploring emerging technologies and applying them to solve real-world challenges.
+            My journey into web development is fueled by curiosity, creativity, and the desire to make a positive impact 
+            through technology.
+        </p>
+        <div class="skills">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Experienced in HTML, CSS, JavaScript, and responsive design principles.</p>
+            </div>
+            <div class="skill">
+                <h3>Python Development</h3>
+                <p>Strong foundation in Python for scripting, automation, and problem-solving.</p>
+            </div>
+            <div class="skill">
+                <h3>UI/UX Design</h3>
+                <p>Creating user-friendly and visually appealing interfaces for web applications.</p>
+            </div>
+            <div class="skill">
+                <h3>Data Analysis</h3>
+                <p>Proficient in analyzing and visualizing data using tools like MS Excel and Python libraries.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Portfolio Copyright © 2024 Ravi - All rights reserved || Designed By: Ravi Kumar</p>
+        <p><a href="Contact.html">Get in touch</a> for any queries or collaboration opportunities.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
